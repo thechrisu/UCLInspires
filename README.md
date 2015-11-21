@@ -13,8 +13,11 @@ Run the app!
 
 You can start running the app by:
 
+```
 cd uclinspires
 python manage.py runserver 
+```
+
 Open your browser and enter localhost:8000/testbox/home which will run the test app 
 
 

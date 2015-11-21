@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block maincontent %}
+<div class="main-container">
+	{% if not request.user.is_authenticated %}
+	<div class="page-header">
+		<h3>UCLInspires</h3>
+	</div>
+
+
+	<p class="lead">This is your page, work on it from here!</p>
+	<p> It's even mobile responsive!</p>
+	{% else %}
+	<div class="page-header">
+		<h3 class=""> Heading</h3>
+        <p> Some content </p>
+	</div>
+    {% endif %}
+
+</div>
+
+{% endblock %}

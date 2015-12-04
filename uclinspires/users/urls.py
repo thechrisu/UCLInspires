@@ -12,6 +12,8 @@ urlpatterns = [
     url(r'^accounts/invalid/$', 'users.views.invalid_login'),
     url(r'^register', 'users.views.register_user', name="register"),
     url(r'^login$', 'users.views.render_login', name="login"),
+    url(r'^show_user/(?P<id>[1-9]+)/$', 'users.views.show_user_profile'),
+
 ]
 
 

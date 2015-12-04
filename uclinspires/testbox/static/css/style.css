@@ -69,3 +69,77 @@ body {
 .navbar-inverse .navbar-toggle .icon-bar {
     background-color: rgba(255, 255, 255, 0.5);
 }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.top .container {
+  max-width: 940px;
+}
+
+.top {
+    background:url(https://s3.amazonaws.com/codecademy-content/projects/pocketbook/bg.jpg) no-repeat;
+    background-size:cover;
+    padding-bottom: 60px;
+}
+
+.header .container {
+    padding: 30px;
+    border-bottom: 1px solid #fff;
+    text-align: center;
+}
+
+.main {
+    color:white;
+    padding-top: 80px;
+}
+
+.header h1 {
+  color: white;
+}
+
+.main h1 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+form {
+  margin-left: 25px;
+}
+
+.main form input {
+    width:400px;
+    border-radius: 0;
+}
+
+.btn-default {
+    margin-top: 30px;
+    color:white;
+    background-color: #286353;
+    border-radius: 0;
+    padding: 6px 10px;
+    border: none;
+}
+
+.features {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.features h3 {
+  text-align:center;
+  margin-bottom: 30px;
+}
+
+.features p {
+  text-align:justify;
+}
+
+@media only screen and (max-width:550px) {
+    .main form input {
+        width:100%;
+    }
+}

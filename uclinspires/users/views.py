@@ -6,6 +6,20 @@ from django.contrib.auth.forms import UserCreationForm
 from forms import MyRegistrationForm
 from django.contrib.auth import logout
 from django.contrib.auth.models import User
+from .models import UserProfile,UniversityStudent,SchoolStudent
+
+
+def show_user_profile(request,id):
+    user = User.objects.get(pk=id)
+    user_profile = UserProfile.objects.get(user=user)
+    specific_type = SchoolStudent.objects.get(user_profile=user_profile)
+    print user_profile
+    response = {
+        'user' : user,
+        'user_profile':user_profile,
+        'accountType':specific_type,
+    }
+    return render(request,'testbox/profile_page.html',response)
 
 def register_user(request):
     if request.method == 'POST':
